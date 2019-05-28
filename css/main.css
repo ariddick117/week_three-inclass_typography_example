@@ -1,63 +1,47 @@
-@font-face 
-{
-  font-family: 'goonies';
-  src:  url('fonts/goonies.woff2') format('woff2'),
-        url('fonts/goonies.woff') format('woff');
-}
-
 .hidden
 {
 	display: none;
 }
 
-main
+body
 {
-	width: 1024px;
+	font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+}
+
+#container
+{
+	width: 700px;
 	margin: 0 auto;
 }
 
-header
+h1
 {
-	background-image: url(../images/goonies.jpg);
-	background-repeat: no-repeat;
-	height: 330px;
+	font-weight: 300;
+	font-size: 34px; /* could use ems here if we define a size for body text */
+	color: #9bac73;
+	letter-spacing: 1px;
 }
 
-body
+h3
 {
-	font-size: 16px; 
-	/* an em is based on body font size. It's a relative font size. one em is 16px, two em is 32px etc. */
+	font-weight: 700;
+	font-size: 14px;
+	color: #738152;
 }
 
-/* text styling */
-
-.text-graphic
+p
 {
-	font-size: 6.4em;
-	/*viewport width = vw, viewport height = vh : the 20 acts as a percentage*/
-	font-family: "TheGoonies", "goonies", sans-serif;
-
-	background: linear-gradient(to bottom, #FD582B 10%, #FCE147 60%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-
-	position: relative;
-	left: 49px;
-	top: 161px;
+	color: #6b6b69;
+	font-size: 17px;
+	line-height: 28px;
+	font-weight: 300;
 }
 
-.text-graphic span
+.drop-cap
 {
-	font-size: 1.9rem;
-	/* rem is a root em value. It ignores any changes to the parent tag */
-	position: absolute;
-
-	background: linear-gradient(to bottom, #FD582B 10%, #FCE147 60%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
-
-	left: 30px;
-	top: -40px;
+	font-size: 100px;
+	font-weight: 400;
+	line-height: 70px;
+	float: left;
+	margin: 5px 10px 0 0;
 }
