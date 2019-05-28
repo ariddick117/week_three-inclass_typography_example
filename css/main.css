@@ -1,4 +1,63 @@
+@font-face 
+{
+  font-family: 'goonies';
+  src:  url('fonts/goonies.woff2') format('woff2'),
+        url('fonts/goonies.woff') format('woff');
+}
+
 .hidden
 {
 	display: none;
+}
+
+main
+{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header
+{
+	background-image: url(../images/goonies.jpg);
+	background-repeat: no-repeat;
+	height: 330px;
+}
+
+body
+{
+	font-size: 16px; 
+	/* an em is based on body font size. It's a relative font size. one em is 16px, two em is 32px etc. */
+}
+
+/* text styling */
+
+.text-graphic
+{
+	font-size: 6.4em;
+	/*viewport width = vw, viewport height = vh : the 20 acts as a percentage*/
+	font-family: "TheGoonies", "goonies", sans-serif;
+
+	background: linear-gradient(to bottom, #FD582B 10%, #FCE147 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+
+	position: relative;
+	left: 49px;
+	top: 161px;
+}
+
+.text-graphic span
+{
+	font-size: 1.9rem;
+	/* rem is a root em value. It ignores any changes to the parent tag */
+	position: absolute;
+
+	background: linear-gradient(to bottom, #FD582B 10%, #FCE147 60%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+
+	left: 30px;
+	top: -40px;
 }
